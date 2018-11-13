@@ -12,5 +12,33 @@
     width: 300px;
     height: 100%;
     border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4)
+    border-color: #03312e;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.main-section {
+    max-width: 75%;
+
+}
+
+.main-section p {
+    font-size: 1em;
+}
+
+#navbar a {
+    border-bottom: 1px solid #03312e;
+
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 350px;
 }
