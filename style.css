@@ -6,15 +6,18 @@
 
 h3 {
     font-weight: 700;
+
 }
 
 .main-section {
     max-width: 75%;
     text-align: justify;
+    margin-top: 55px;
 }
 
 .main-section p {
     font-size: 1em;
+
 }
 
 #main-doc {
@@ -49,6 +52,7 @@ h3 {
     font-size: 4em;
     text-align: center;
     margin-top: 150px;
+    color: #03312E;
 }
 
 #navbar a {
@@ -65,23 +69,12 @@ h3 {
     color: white;
 }
 
-@media only screen and (max-width: 400px) {
-    #main-doc {
-        margin-left: -10px;
-    }
 
-    code {
-        margin-left: -20px;
-        width: 100%;
-        padding: 15px;
-        padding-left: 10px;
-        padding-right: 45px;
-        min-width: 233px;
-    }
-}
+
 
 @media only screen and (max-width: 815px) {
 
+    /* For mobile phones: */
     #navbar ul {
         border: 1px solid;
         height: 207px;
@@ -98,6 +91,7 @@ h3 {
         border: none;
         z-index: 1;
         border-bottom: 2px solid;
+
     }
 
     #main-doc {
@@ -106,7 +100,12 @@ h3 {
         margin-top: 270px;
     }
 
-    #main-doc section {
-        padding-top: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #navbar .fa-instagram {
+        display: none;
     }
+
 }
