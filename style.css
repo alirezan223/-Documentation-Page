@@ -29,8 +29,12 @@ h3 {
 
 /*-------Video--------*/
 
-iframe {
-margin: 0 auto;
+video {
+    margin: 0px auto;
+}
+
+#video {
+    padding-top: 50px;
 }
 
 /*------Navbar------*/
