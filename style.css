@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -26,6 +27,12 @@ h3 {
     margin-left: 350px;
 }
 
+/*-------Video--------*/
+
+iframe {
+margin: 0 auto;
+}
+
 /*------Navbar------*/
 
 #navbar {
@@ -46,13 +53,18 @@ h3 {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 30px;
+    font-family: 'Pacifico', cursive;
 }
 
 .fab {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    margin: auto 0;
     font-size: 4em;
     text-align: center;
     margin-top: 150px;
-    color: #03312E;
 }
 
 #navbar a {
@@ -69,15 +81,20 @@ h3 {
     color: white;
 }
 
+/*------Media querrys--------*/
 
+@media only screen and (max-width: 1107px) {
 
+    .main-section {
+        max-width: 90%;
+    }
+
+}
 
 @media only screen and (max-width: 815px) {
 
-    /* For mobile phones: */
-    #navbar ul {
-        border: 1px solid;
-        height: 207px;
+    i {
+        display: none !important;
     }
 
     #navbar {
@@ -90,16 +107,38 @@ h3 {
         max-height: 275px;
         border: none;
         z-index: 1;
-        border-bottom: 2px solid;
+    }
 
+    .nav-link {
+        border-bottom: #03312E solid 1px;
+    }
+
+    #navbar a {
+        padding: 10px;
+        margin: 0;
+        padding-left: 40px;
+    }
+
+    #navbar h1 {
+        margin-bottom: 0px;
     }
 
     #main-doc {
         position: relative;
         margin-left: 0px;
-        margin-top: 270px;
+        margin-top: 300px;
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 
+    .main-section header h3 {
+        text-align: center;
+    }
+
+    #main-doc section {
+        padding-top: 40px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
